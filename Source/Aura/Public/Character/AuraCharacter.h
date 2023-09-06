@@ -14,4 +14,16 @@ class AURA_API AAuraCharacter : public AAuraCharacterBase
 {
 	GENERATED_BODY()
 	
+public:
+	AAuraCharacter();
+
+protected:
+	virtual void BeginPlay() override;
+
+private:
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, meta = (AllowPrivateAccess = true))
+		class USpringArmComponent* SpringArmComp;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, meta = (AllowPrivateAccess = true))
+		class UCameraComponent* CameraComp;
 };
