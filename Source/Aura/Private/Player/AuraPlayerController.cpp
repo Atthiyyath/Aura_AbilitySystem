@@ -1,6 +1,6 @@
 // Copyright @atthiyya
 
-#include "Player\AuraPlayerController.h"
+#include "Player/AuraPlayerController.h"
 #include "InputMappingContext.h"
 #include "EnhancedInputSubsystems.h"
 #include "EnhancedInputComponent.h"
